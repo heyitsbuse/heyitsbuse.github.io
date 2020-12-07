@@ -3,7 +3,6 @@ Colors used:
 Primary color (Bright Green): #6CD6B0;
 Secondary color (Darker Green): #56AC8D;
 */
-
 body {
   background-color: #FFFFFF;
   font-family: 'Chivo', sans-serif;
@@ -16,6 +15,7 @@ body {
 h1, h2, h3 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 900;
@@ -31,7 +31,22 @@ h3 {
   font-weight: 300;
   font-style: italic;
 }
-
 img {
   width: 100%;
+}
+
+a:visited {
+  color: #56AC8D;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #6CD6B0;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #56AC8D;
+  text-decoration: none;
 }
