@@ -83,6 +83,26 @@ a:active {
   text-decoration: none;
 }
 
-.button.footer {
+.button-nav,
+.button-nav:visited {
+  font-weight: 900;
+  font-size: 2em;
+  color: #56AC8D;
+  border: none;
+  text-transform: none;
+}
+
+.button-nav:hover,
+.button-nav:focus,
+.button-nav:active {
+  color: #6CD6B0;
+  text-decoration: none;
+}
+
+.button-footer,
+.button-footer:visited,
+.button-footer:hover,
+.button-footer:focus,
+.button-footer:active {
   border:none;
 }
