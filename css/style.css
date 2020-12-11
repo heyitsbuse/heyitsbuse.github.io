@@ -22,6 +22,12 @@ header {
   width: 100%;
 }
 
+/* On screens that are 600px wide or less, center the nav bar elements */
+@media screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+}
 
 nav > ul {
   list-style-type: none;
