@@ -27,30 +27,6 @@ main {
   margin: 0.625em;
 }
 
-/* On screens that are 767px wide or less... */
-@media screen and (max-width: 767px) {
-  header {
-    text-align: center;
-    background-color: rgba(255,255,255);
-  }
-  main {
-    padding-top: 80px;
-  }
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 18px;
-}
-
 h1, h2, h3 {
   line-height: 1.4;
 }
@@ -145,4 +121,41 @@ a:active {
 .button-footer:focus,
 .button-footer:active {
   border:none;
+}
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
+
+#hero h1, h2, h3 {
+  text-align: left;
+}
+
+/* On screens that are 767px wide or less... */
+@media screen and (max-width: 767px) {
+  header {
+    text-align: center;
+    background-color: rgba(255,255,255);
+    width: 100%;
+  }
+  main {
+    padding-top: 80px;
+  }
+  #hero h1, h2, h3 {
+    text-align: center;
+  }
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
 }
