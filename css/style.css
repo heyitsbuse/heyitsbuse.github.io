@@ -22,10 +22,19 @@ header {
   width: 100%;
 }
 
-/* On screens that are 600px wide or less, center the nav bar elements */
-@media screen and (max-width: 600px) {
+main {
+  padding-top: 5px;
+  margin: 0.625em;
+}
+
+/* On screens that are 767px wide or less... */
+@media screen and (max-width: 767px) {
   header {
     text-align: center;
+    background-color: rgba(255,255,255);
+  }
+  main {
+    padding-top: 80px;
   }
 }
 
@@ -40,11 +49,6 @@ nav > ul > li {
 
 nav > ul > li > a {
   padding: 0 18px;
-}
-
-main {
-  padding-top: 100px;
-  margin: 0.625em;
 }
 
 h1, h2, h3 {
