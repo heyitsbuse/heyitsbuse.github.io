@@ -3,6 +3,12 @@ Colors used:
 Primary color (Bright Green): #6CD6B0;
 Secondary color (Darker Green): #56AC8D;
 */
+header {
+  background-color: #FFFFFF;
+  padding: 0.625em;
+  margin: 0.625em;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Chivo', sans-serif;
