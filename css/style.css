@@ -22,7 +22,7 @@ header {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
@@ -41,6 +41,7 @@ h3 {
   font-weight: 300;
   font-style: italic;
 }
+
 h4 {
   font-size: 1em;
   font-weight: 400;
@@ -54,7 +55,6 @@ img {
 a {
   color: #56AC8D;
   text-decoration: none;
-  position: inline-block;
 }
 
 a:visited {
@@ -83,6 +83,8 @@ a:active {
   text-transform: uppercase;
   padding: 10px;
   border-radius: 5px;
+  max-width: 320px;
+
 }
 
 .button:hover,
@@ -92,6 +94,7 @@ a:active {
   color: white;
   border: none;
   text-decoration: none;
+  max-width: 320px;
 }
 
 .button-nav,
@@ -115,36 +118,62 @@ a:active {
 .button-footer:hover,
 .button-footer:focus,
 .button-footer:active {
-  border:none;
+  border: none;
+  max-width: 320px;
 }
 
 /* Layout Styling */
+main {
+  padding-top: 38px;
+}
+
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
 }
 
-main {
-  padding-top: 5px;
-  margin: 0.625em;
+.social {
+  width: 210px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
-#hero h1, h2, h3 {
+#hero {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero, #henlo, #magicup, #aydore h1, h2, h3, h4 {
   text-align: left;
 }
 
-/* On screens that are 767px wide or less... */
-@media screen and (max-width: 767px) {
-  header {
-    text-align: center;
-    background-color: rgba(255,255,255);
-    width: 100%;
-  }
-  main {
-    padding-top: 80px;
-  }
-  #hero h1, h2, h3 {
-    text-align: center;
-  }
+.row > .button {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 40%;
+}
+
+#linkedin, #email, #instagram {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  float: left;
+}
+
+#copyright {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 nav > ul {
@@ -157,5 +186,32 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+/* On screens that are 767px wide or less... */
+@media screen and (max-width: 767px) {
+  header {
+    text-align: center;
+    background-color: #000000;
+    width: 100%;
+  }
+  main {
+    padding-top: 70px;
+  }
+  #hero, #henlo, #magicup, #aydore h1, h2, h3, h4 {
+    text-align: center;
+  }
+  .button-nav,
+  .button-nav:visited,
+  .button-nav:active,
+  .button-nav:focus {
+    color: #FFFFFF;
+  }
 }
