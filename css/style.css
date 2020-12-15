@@ -193,6 +193,13 @@ nav > ul > li > a {
   margin: 25px 0;
   padding-bottom: 25px;
   border-bottom: 1px solid black;
+  width: 50%;
+  float: right;
+}
+
+picture {
+  width: 50%;
+  float: left;
 }
 
 /* On screens that are 767px wide or less... */
@@ -213,5 +220,13 @@ nav > ul > li > a {
   .button-nav:active,
   .button-nav:focus {
     color: #FFFFFF;
+  }
+  picture {
+    width: 100%;
+    float: none;
+  }
+  .row {
+    width: 100%;
+    float: none;
   }
 }
