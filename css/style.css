@@ -4,22 +4,14 @@ Primary color (Bright Green): #6CD6B0;
 Secondary color (Darker Green): #56AC8D;
 */
 
+/* General Stylings--colors,fonts/imgs */
 body {
-  background-color: #ffffff;
+  background-color: white;
   font-family: 'Chivo', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #000000;
-}
-
-header {
-  background-color: rgba(255,255,255,0);
-  margin: 0 auto;
-  position: fixed;
-  display: inline-block;
-  text-align: right;
-  width: 100%;
+  color: black;
 }
 
 h1, h2, h3, h4 {
@@ -48,10 +40,14 @@ h4 {
   text-transform: uppercase;
 }
 
-img {
+img, picture {
   width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  float: left;
 }
 
+/* Link Styling */
 a {
   color: #56AC8D;
   text-decoration: none;
@@ -63,68 +59,20 @@ a:visited {
 }
 
 a:hover,
-a:focus {
+a:focus,
+a:active {
   color: #6CD6B0;
   text-decoration: underline;
 }
 
-a:active {
-  color: #6CD6B0;
-  text-decoration: none;
-}
-
-.button,
-.button:visited {
+/* Header Styling (see override for smaller screens below)*/
+header {
+  background-color: rgba(255,255,255,0);
+  margin: 0 auto;
+  position: fixed;
   display: inline-block;
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 320px;
-
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: black;
-  color: white;
-  border: none;
-  text-decoration: none;
-  max-width: 320px;
-}
-
-.button-nav,
-.button-nav:visited {
-  font-weight: 900;
-  font-size: 1.5em;
-  color: #56AC8D;
-  border: none;
-  text-transform: none;
-}
-
-.button-nav:hover,
-.button-nav:focus,
-.button-nav:active {
-  color: #6CD6B0;
-  text-decoration: none;
-}
-
-.button-footer,
-.button-footer:visited,
-.button-footer:hover,
-.button-footer:focus,
-.button-footer:active {
-  border: none;
-  max-width: 320px;
-}
-
-/* Layout Styling */
-main {
-  padding-top: 38px;
+  text-align: right;
+  width: 100%;
 }
 
 .container {
@@ -132,48 +80,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-}
-
-.social {
-  width: 210px;
-  height: 70px;
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-}
-
-#hero {
-  background-color: #ffffff;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero, #henlo, #magicup, #aydore h1, h2, h3, h4 {
-  text-align: left;
-}
-
-.row > .button {
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  width: 40%;
-}
-
-#linkedin, #email, #instagram {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 10px;
-  float: left;
-}
-
-#copyright {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 20px;
 }
 
 nav > ul {
@@ -189,44 +95,141 @@ nav > ul > li > a {
   padding: 0 10px;
 }
 
-.row {
-  margin: 25px 0;
-  padding-bottom: 25px;
-  border-bottom: 1px solid black;
-  width: 50%;
-  float: right;
+/* .button-nav links only include the "work" "about" "resume" buttons (see override for smaller screens below) */
+.button-nav,
+.button-nav:visited {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #56AC8D;
+  border: none;
+  text-transform: none;
+}
+.button-nav:hover,
+.button-nav:focus,
+.button-nav:active {
+  color: #6CD6B0;
+  text-decoration: none;
 }
 
-picture {
-  width: 50%;
+/* Hero Styling (see override for smaller screens below)*/
+#hero {
+  padding: 58px 0px 20px 0px;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Project Preview Styling (see override for smaller screens below) */
+#henlo, #magicup, #aydore {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
   float: left;
 }
 
-/* On screens that are 767px wide or less... */
+/* 2nd div in a container styling (see override for smaller screens below) */
+.row {
+  margin: 25px 0;
+  padding-bottom: 25px;
+  width: 100%;
+  display: inline-block;
+}
+
+/* .button links only include the "View Project" buttons */
+.button,
+.button:visited {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 320px;
+  text-align: center;
+  width: 40%;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: black;
+  color: white;
+  border: none;
+  text-decoration: none;
+  max-width: 320px;
+}
+
+/* Footer Styling */
+/* .button-footer links only include the LinkedIn, E-mail, Instagram buttons */
+footer {
+  margin: 0 auto;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 150px;
+}
+
+.button-footer,
+.button-footer:visited,
+.button-footer:hover,
+.button-footer:focus,
+.button-footer:active {
+  border: none;
+  max-width: 320px;
+}
+
+/* .social {
+  width: 210px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+} */
+
+.social {
+  max-width: 210px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+#linkedin, #email, #instagram {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+  float: left;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%
+}
+
+/* Override: On screens that are 767px wide or less */
 @media screen and (max-width: 767px) {
   header {
     text-align: center;
-    background-color: #000000;
+    background-color: black;
     width: 100%;
   }
-  main {
-    padding-top: 70px;
+  #hero {
+    padding-top: 90px;
   }
-  #hero, #henlo, #magicup, #aydore h1, h2, h3, h4 {
+  #hero, #henlo, #magicup, #aydore {
     text-align: center;
   }
   .button-nav,
   .button-nav:visited,
   .button-nav:active,
   .button-nav:focus {
-    color: #FFFFFF;
-  }
-  picture {
-    width: 100%;
-    float: none;
+    color: white;
   }
   .row {
-    width: 100%;
-    float: none;
+    border-bottom: 1px solid black;
   }
 }
