@@ -43,9 +43,9 @@ h4 {
 
 img, picture {
   width: 100%;
-  border-radius: 5px;
   height: 100%;
   float: left;
+  border-radius: 10px;
 }
 
 /* Link Styling */
@@ -147,7 +147,7 @@ nav > ul > li > a {
   font-weight: 400;
   text-transform: uppercase;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   max-width: 320px;
   text-align: center;
   width: 40%;
