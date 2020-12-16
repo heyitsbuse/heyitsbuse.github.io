@@ -223,8 +223,13 @@ footer {
   padding-bottom: 20px;
 }
 
-/* Override: On screens that are 767px wide or less */
-@media screen and (max-width: 767px) {
+/* Override: On screens that are 1024px wide or less */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* Override: On screens that are 640px wide or less */
+@media screen and (max-width: 640px) {
   header {
     text-align: center;
     background-color: black;
