@@ -16,6 +16,7 @@ body {
 
 h1, h2, h3, h4 {
   line-height: 1.4;
+  margin-top: 0;
 }
 
 h1 {
@@ -127,10 +128,10 @@ nav > ul > li > a {
   float: left;
 }
 
-/* 2nd div in a container styling (see override for smaller screens below) */
+/* Row styling (see override for smaller screens below) */
 .row {
-  margin: 25px 0;
-  padding-bottom: 25px;
+  margin: 20px 0;
+  padding-bottom: 20px;
   width: 100%;
   display: inline-block;
 }
@@ -171,15 +172,6 @@ footer {
   height: 150px;
 }
 
-.button-footer,
-.button-footer:visited,
-.button-footer:hover,
-.button-footer:focus,
-.button-footer:active {
-  border: none;
-  max-width: 320px;
-}
-
 .social {
   max-width: 210px;
   height: 70px;
@@ -188,8 +180,13 @@ footer {
   list-style-type: none;
 }
 
-#linkedin, #email, #instagram {
-  display: inline-block;
+.button-footer,
+.button-footer:visited,
+.button-footer:hover,
+.button-footer:focus,
+.button-footer:active {
+  border: none;
+  max-width: 320px;
   width: 50px;
   height: 50px;
   margin: 0 auto;
@@ -202,6 +199,30 @@ footer {
   width: 100%
 }
 
+/* About Page Main Stylings */
+#about {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#bio {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+/* Henlo Project Page Stylings */
+.container > #henlo > .row {
+  margin-top: 0px;
+  border-bottom: 1px solid black;
+}
+
+.container > #henlo > .row picture {
+  padding-bottom: 20px;
+}
+
 /* Override: On screens that are 767px wide or less */
 @media screen and (max-width: 767px) {
   header {
@@ -209,19 +230,32 @@ footer {
     background-color: black;
     width: 100%;
   }
-  #hero {
-    padding-top: 90px;
-  }
-  #hero, #henlo, #magicup, #aydore {
-    text-align: center;
-  }
   .button-nav,
   .button-nav:visited,
   .button-nav:active,
   .button-nav:focus {
     color: white;
   }
+  #hero {
+    padding-top: 90px;
+  }
+  #hero {
+    text-align: center;
+  }
   .row {
     border-bottom: 1px solid black;
+  }
+  #about > .container > picture {
+    width: 100%;
+  }
+  #about > .container > #bio {
+    width: 100%;
+    padding-left: 0;
+  }
+  #bio {
+    padding-left: 0;
+  }
+  #biocopy h2 {
+    padding-top: 20px;
   }
 }
