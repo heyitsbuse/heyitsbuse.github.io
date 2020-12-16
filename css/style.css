@@ -217,7 +217,11 @@ footer {
 }
 
 .container > #henlo > .row picture {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+
+.container > #henlo > .row h1 {
+  padding-top: 10px;
 }
 
 /* Column Styling (see overrides for medium and small screens below)*/
