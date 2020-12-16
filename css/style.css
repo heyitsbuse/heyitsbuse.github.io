@@ -269,19 +269,11 @@ footer {
   }
   .row {
     border-bottom: 1px solid black;
-  }
-  #about > .container > picture {
-    width: 100%;
+    margin-top: 0;
   }
   #about > .container > #bio {
     width: 100%;
     padding-left: 0;
-  }
-  #bio {
-    padding-left: 0;
-  }
-  #biocopy h2 {
-    padding-top: 20px;
   }
   [class*="col-"] {
     width: 100%;
