@@ -157,7 +157,7 @@ nav > ul > li > a {
 .button:active {
   background-color: black;
   color: white;
-  border: none;
+  border: 2px solid black;
   text-decoration: none;
   max-width: 320px;
 }
