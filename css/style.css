@@ -134,6 +134,9 @@ nav > ul > li > a {
 }
 
 /* .button links only include the "View Project" buttons */
+.button {
+  transition: [transition-property:] [transition-duration] [transition-timing-function] [transition-delay];
+}
 .button,
 .button:visited {
   display: inline-block;
@@ -148,6 +151,7 @@ nav > ul > li > a {
   max-width: 320px;
   text-align: center;
   width: 40%;
+  transition: background-color 0.5s;
 }
 .button:hover,
 .button:focus,
