@@ -251,8 +251,8 @@ footer {
   }
 }
 
-/* Override: On screens that are 640px wide or less */
-@media screen and (max-width: 640px) {
+/* Override: On screens that are 767px wide or less */
+@media screen and (max-width: 767px) {
   header {
     text-align: center;
     background-color: black;
