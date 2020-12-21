@@ -96,6 +96,21 @@ nav > ul > li > a {
 }
 
 /* .button-nav links only include the "work" "about" "resume" buttons (see override for smaller screens below) */
+.navigation > li > ul {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.navigation > li:hover > ul {
+  display: block;
+  max-width: 300px;
+  font-size: 0.75em;
+}
+
 .button-nav,
 .button-nav:visited {
   font-weight: 900;
@@ -104,10 +119,21 @@ nav > ul > li > a {
   border: none;
   text-transform: none;
 }
+
 .button-nav:hover,
 .button-nav:focus,
 .button-nav:active {
   color: #6CD6B0;
+  text-decoration: none;
+}
+
+.button-content a:hover {
+  display: block;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #56AC8D;
+  border: none;
+  text-transform: none;
   text-decoration: none;
 }
 
@@ -267,6 +293,10 @@ footer {
   .button-nav:active,
   .button-nav:focus {
     color: white;
+  }
+  .navigation > li:hover > ul {
+    background-color: black;
+    width: auto;
   }
   #hero {
     padding-top: 100px;
