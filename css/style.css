@@ -209,11 +209,6 @@ footer {
   margin: 0 auto;
 }
 
-#bio {
-  display: inline-block;
-  padding: 20px 0;
-}
-
 /* Henlo Project Page Stylings */
 .container > #henlo > .row {
   margin-top: 0px;
@@ -278,6 +273,7 @@ footer {
   .row {
     border-bottom: 1px solid black;
     margin-top: 0;
+    padding-bottom: 20px;
   }
   #about > .container > #bio {
     width: 100%;
