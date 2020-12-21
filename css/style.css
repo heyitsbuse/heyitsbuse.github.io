@@ -113,7 +113,7 @@ nav > ul > li > a {
 
 /* Hero Styling (see override for smaller screens below)*/
 #hero {
-  padding: 58px 0px 20px 0px;
+  padding: 108px 0px 58px 0px;
   text-align: left;
   width: 100%;
   margin: 0 auto;
@@ -197,7 +197,8 @@ footer {
 
 #copyright {
   text-align: center;
-  width: 100%
+  width: 100%;
+  padding-top: 20px;
 }
 
 /* About Page Main Stylings */
@@ -209,6 +210,9 @@ footer {
   margin: 0 auto;
 }
 
+#biocopy {
+  padding-top: 20px;
+}
 /* Henlo Project Page Stylings */
 .container > #henlo > .row {
   margin-top: 0px;
@@ -265,7 +269,8 @@ footer {
     color: white;
   }
   #hero {
-    padding-top: 90px;
+    padding-top: 100px;
+    padding-bottom: 20px;
   }
   #hero {
     text-align: center;
