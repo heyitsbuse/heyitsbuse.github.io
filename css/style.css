@@ -102,13 +102,13 @@ nav > ul > li > a {
   list-style-type: none;
   padding: 10px;
   text-align: left;
-  width: 100%;
 }
 
 .navigation > li:hover > ul {
   display: block;
-  max-width: 300px;
-  font-size: 0.75em;
+  width: 300px;
+  font-size: .75em;
+  background-color: white;
 }
 
 .button-nav,
