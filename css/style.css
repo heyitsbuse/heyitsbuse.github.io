@@ -139,10 +139,30 @@ nav > ul > li > a {
 
 /* Hero Styling (see override for smaller screens below)*/
 #hero {
-  padding: 108px 0px 58px 0px;
+  padding: 108px 0px 40px 0px;
   text-align: left;
   width: 100%;
   margin: 0 auto;
+}
+
+#hero > .container > .row {
+  padding-bottom: 0;
+}
+
+@keyframes balloon-enter {
+  from {transform:translate(0px,0px);}
+  to {transform:translate(0px,10px);}
+}
+
+#illustration {
+  max-width: 500px;
+  height: auto;
+  float: right;
+  padding: 0;
+}
+
+#girlballoon {
+  animation: 2s balloon-enter infinite alternate ease-in-out;
 }
 
 /* Project Preview Styling (see override for smaller screens below) */
@@ -304,6 +324,12 @@ footer {
   }
   #hero {
     text-align: center;
+  }
+  #hero h2 {
+    font-size: 1em;
+  }
+  #illustration {
+    width: 100%;
   }
   .row {
     border-bottom: 1px solid black;
