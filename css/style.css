@@ -321,12 +321,15 @@ footer {
   #hero {
     padding-top: 100px;
     padding-bottom: 20px;
-  }
-  #hero {
     text-align: center;
+    max-width: 500px;
   }
   #hero h2 {
     font-size: 1em;
+  }
+  #hero picture {
+    width: 100%;
+    padding-left: 0;
   }
   #illustration {
     width: 100%;
@@ -335,6 +338,9 @@ footer {
     border-bottom: 1px solid black;
     margin-top: 0;
     padding-bottom: 20px;
+  }
+  #hero > .container > .row {
+    border-bottom: 0;
   }
   #about > .container > #bio {
     width: 100%;
