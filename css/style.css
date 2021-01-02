@@ -206,6 +206,25 @@ nav > ul > li > a {
   max-width: 320px;
 }
 
+/* Float to Top Styling (project screens only) */
+.sticky-parent {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+#sticky {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  background-color: #56AC8D;
+  border: 2px solid #6CD6B0;
+  border-radius: 10px;
+  font-size: 25px;
+  justify-content: center;
+}
+
 /* Footer Styling */
 /* .button-footer links only include the LinkedIn, E-mail, Instagram buttons */
 footer {
