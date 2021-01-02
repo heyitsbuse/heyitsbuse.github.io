@@ -6,9 +6,9 @@ var bodyElement = document.body //For Safari
 // create new window scroll function named scroll Appear
 window.onscroll = function() { scrollAppear() };
 
-// define scroll Appear to be visible when user is 100px from top of document
+// define scroll Appear to be visible when user is 300px from top of document
 function scrollAppear() {
-  if (bodyElement.scrollTop > 100 || rootElement.scrollTop > 100) {
+  if (bodyElement.scrollTop > 300 || rootElement.scrollTop > 300) {
       sticky.style.display = ("block");
   } else {
       sticky.style.display = ("none");
