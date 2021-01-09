@@ -211,7 +211,6 @@ nav > ul > li > a {
   display: flex;
   justify-content: flex-end;
   padding: 0 15px;
-  /* max-width: 1200px; */
 }
 
 #sticky {
