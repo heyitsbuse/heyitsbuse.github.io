@@ -165,6 +165,10 @@ nav > ul > li > a {
   animation: 2s balloon-enter infinite alternate ease-in-out;
 }
 
+#hint {
+  text-align: center;
+}
+
 /* Project Preview Styling (see override for smaller screens below) */
 #henlo, #magicup, #aydore {
   text-align: left;
