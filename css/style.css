@@ -165,7 +165,7 @@ nav > ul > li > a {
   animation: 2s balloon-enter infinite alternate ease-in-out;
 }
 
-#hint {
+#hero > #hint {
   text-align: center;
 }
 
