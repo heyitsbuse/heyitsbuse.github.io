@@ -67,7 +67,7 @@ a:active {
 
 /* Header Styling (see override for smaller screens below)*/
 header {
-  background-color: rgba(255,255,255,0);
+  background-color: white;
   margin: 0 auto;
   position: fixed;
   display: inline-block;
