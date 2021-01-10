@@ -291,11 +291,13 @@ footer {
 #biocopy {
   padding-top: 20px;
 }
+
 /* Henlo Project Page Stylings */
 .container > #henlo > .row {
   margin-top: 0px;
   border-bottom: 1px solid #2E2D41;
   position: relative;
+  padding-top: 15px;
 }
 
 /* .container > #henlo > .row picture {
@@ -321,6 +323,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 /* Column Styling (see overrides for medium and small screens below)*/
@@ -376,6 +379,9 @@ iframe {
   }
   h1 {
     font-size: 1.5em;
+  }
+  h2 {
+    padding-top: 10px;
   }
   #hero h2 {
     font-size: 1em;
