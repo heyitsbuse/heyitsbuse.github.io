@@ -75,7 +75,6 @@ header {
   display: inline-block;
   text-align: right;
   width: 100%;
-  overflow-y: scroll;
 }
 
 .container {
@@ -140,6 +139,9 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
+main {
+  overflow-y: scroll;
+}
 /* Hero Styling (see override for smaller screens below)*/
 #hero {
   padding: 108px 0px 40px 0px;
