@@ -75,6 +75,7 @@ header {
   display: inline-block;
   text-align: right;
   width: 100%;
+  z-index:2;
 }
 
 .container {
@@ -141,6 +142,7 @@ nav > ul > li > a {
 
 main {
   overflow-y: scroll;
+  z-index:1;
 }
 /* Hero Styling (see override for smaller screens below)*/
 #hero {
