@@ -2,6 +2,8 @@
 Colors used:
 Primary color (Bright Green): #6CD6B0;
 Secondary color (Darker Green): #56AC8D;
+(Navy): #2E2D41;
+(Lighter Navy): #3F3D56;
 */
 
 /* General Stylings--colors,fonts/imgs */
@@ -165,8 +167,12 @@ nav > ul > li > a {
   animation: 2s balloon-enter infinite alternate ease-in-out;
 }
 
-#hero > #hint {
+#hint {
   text-align: center;
+  padding-bottom: 40px;
+  border-radius: 100px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 /* Project Preview Styling (see override for smaller screens below) */
@@ -210,7 +216,7 @@ nav > ul > li > a {
   max-width: 320px;
 }
 
-/* Float to Top Styling (project screens only) */
+/* Float to Top Styling */
 .sticky-parent {
   display: flex;
   justify-content: flex-end;
@@ -222,10 +228,12 @@ nav > ul > li > a {
   position: fixed;
   bottom: 15px;
   background-color: #56AC8D;
-  border: 2px solid #6CD6B0;
-  border-radius: 10px;
-  font-size: 25px;
+  border: 2px solid #56AC8D;
+  border-radius: 30px;
+  font-size: 30px;
+  padding: 5px;
   justify-content: center;
+  animation: 2s balloon-enter infinite alternate ease-in-out;
 }
 
 /* Footer Styling */
@@ -281,7 +289,7 @@ footer {
 /* Henlo Project Page Stylings */
 .container > #henlo > .row {
   margin-top: 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #2E2D41;
 }
 
 .container > #henlo > .row picture {
@@ -332,6 +340,7 @@ footer {
   .button-nav:active,
   .button-nav:focus {
     color: white;
+    font-size: 1.25em;
   }
   .navigation > li:hover > ul {
     background-color: black;
@@ -339,9 +348,11 @@ footer {
   }
   #hero {
     padding-top: 100px;
-    padding-bottom: 20px;
     text-align: center;
     max-width: 500px;
+  }
+  h1 {
+    font-size: 1.5em;
   }
   #hero h2 {
     font-size: 1em;
@@ -368,5 +379,13 @@ footer {
   [class*="col-"] {
     width: 100%;
     padding: 0;
+  }
+  #copyright {
+    max-width: 205px;
+    margin: 0 auto;
+    font-size: .75em;
+  }
+  #sticky {
+    font-size: 20px;
   }
 }
