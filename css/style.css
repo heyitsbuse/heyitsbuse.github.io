@@ -291,6 +291,10 @@ footer {
   margin: 0;
 }
 
+#span {
+  display: inline;
+}
+
 /* Henlo Project Page Stylings */
 .container > #henlo > .row {
   margin-top: 0px;
