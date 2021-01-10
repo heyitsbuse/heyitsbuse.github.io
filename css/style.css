@@ -141,7 +141,6 @@ nav > ul > li > a {
 }
 
 main {
-  overflow-y: scroll;
   z-index:1;
 }
 /* Hero Styling (see override for smaller screens below)*/
@@ -394,16 +393,8 @@ iframe {
     width: 100%;
   }
   .row {
-    border-bottom: 1px solid black;
     margin-top: 0;
     padding-bottom: 20px;
-  }
-  #hero > .container > .row {
-    border-bottom: 0;
-  }
-  #about > .container > #bio {
-    width: 100%;
-    padding-left: 0;
   }
   [class*="col-"] {
     width: 100%;
