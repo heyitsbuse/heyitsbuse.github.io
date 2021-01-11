@@ -412,6 +412,9 @@ iframe {
     margin-top: 0;
     padding-bottom: 20px;
   }
+  #youtube {
+    padding-bottom: 15px;
+  }
   [class*="col-"] {
     width: 100%;
     padding: 0;
