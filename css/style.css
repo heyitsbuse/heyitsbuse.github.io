@@ -234,7 +234,7 @@ main {
   background-color: #56AC8D;
   border: 2px solid #56AC8D;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 23px;
   padding: 5px;
   justify-content: center;
   animation: 2s balloon-enter infinite alternate ease-in-out;
