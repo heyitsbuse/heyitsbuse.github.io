@@ -296,7 +296,7 @@ footer {
 }
 
 /* Henlo Project Page Stylings */
-.container > #henlo > .row {
+.container > .henlo > .row {
   margin-top: 0px;
   border-bottom: 1px solid #2E2D41;
   position: relative;
@@ -307,7 +307,7 @@ footer {
   padding-bottom: 25px;
 } */
 
-.container > #henlo > .row h2 {
+.container > .henlo > .row h2 {
   padding-top: 15px;
 }
 
