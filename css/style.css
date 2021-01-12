@@ -142,10 +142,11 @@ nav > ul > li > a {
 
 main {
   z-index:1;
+  padding-top: 70px;
 }
 /* Hero Styling (see override for smaller screens below)*/
 #hero {
-  padding: 108px 0px 40px 0px;
+  padding: 40px 0px 40px 0px;
   text-align: left;
   width: 100%;
   margin: 0 auto;
@@ -187,8 +188,6 @@ main {
 
 /* Row styling (see override for smaller screens below) */
 .row {
-  margin: 20px 0;
-  padding-bottom: 20px;
   width: 100%;
   display: inline-block;
 }
@@ -322,7 +321,10 @@ footer {
   width: 100%;
   height: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   padding-bottom: 50%;
 }
