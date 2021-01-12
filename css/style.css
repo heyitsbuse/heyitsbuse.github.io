@@ -237,7 +237,10 @@ main {
   font-size: 23px;
   padding: 5px;
   justify-content: center;
-  animation: 2s balloon-enter infinite alternate ease-in-out;
+}
+
+#sticky:hover {
+  transform: scale(1.1);
 }
 
 /* Footer Styling */
