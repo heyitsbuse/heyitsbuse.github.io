@@ -278,6 +278,10 @@ footer {
   padding-top: 20px;
 }
 
+#linkedin:hover, #email:hover, #instagram:hover {
+  transform: scale(1.1);
+}
+
 /* About Page Main Stylings */
 #about {
   display: inline-block;
@@ -323,7 +327,6 @@ footer {
 .prototype {
   width: auto;
   height: 100%;
-  max-width: 500px;
   margin: 0 auto;
   position: relative;
   padding-bottom: 100%;
