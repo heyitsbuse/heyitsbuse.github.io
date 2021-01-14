@@ -331,24 +331,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.project-hero {
-  padding-top:40px;
-  padding-bottom: 10px;
-  background-color: white;
-}
-
-.progress-container {
-  height: 100%;
-  width: 8px;
-}
-
-.progress-bar {
-  width: 8px;
-  background: #56AC8D;
-  border-radius: 10px;
-  height: 100%;
-}
-
 .steps {
   display: flex;
   flex-wrap: wrap;
