@@ -1,3 +1,4 @@
+//
 // id="sticky" is the scroll to top button
 var sticky = document.getElementById("sticky")
 var rootElement = document.documentElement //For Chrome/Firefox/IE/Opera
