@@ -469,6 +469,10 @@ iframe {
     padding: 0;
   }
 
+  #sticky {
+    bottom: 30px;
+  }
+
   #copyright {
     max-width: 205px;
     margin: 0 auto;
