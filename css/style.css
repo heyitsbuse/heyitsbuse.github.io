@@ -3,7 +3,6 @@ Colors used:
 Primary color (Bright Green): #6CD6B0;
 Secondary color (Darker Green): #56AC8D;
 */
-
 /* General Stylings */
 body {
   background-color: white;
@@ -80,11 +79,6 @@ header {
   z-index: 3;
 }
 
-/* Header Styling for project pages with a transparent background. (see override for smaller screens below)*/
-.project-header {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 /* Container Styling.*/
 .container {
   /* Ensures elements don't touch left/right edges of screen*/
@@ -102,13 +96,13 @@ header {
 }
 
 /* Header Nav Freeing list items */
-.navigation > li {
+.navigation>li {
   display: inline-block;
 }
 
 /* Header Nav Titles Links ("Project" "About" and "Resume") */
-.navigation > li > a,
-.navigation > li > a:visited {
+.navigation>li>a,
+.navigation>li>a:visited {
   font-weight: 900;
   font-size: 1.5em;
   /* So that end of "resume" meets container edge */
@@ -116,10 +110,11 @@ header {
 }
 
 /* Header Nav Title Links Lighten Up in Color Upon Hover */
-.navigation > li > a:hover,
-.navigation > li > a:focus,
-.navigation > li > a:active {
+.navigation>li>a:hover,
+.navigation>li>a:focus,
+.navigation>li>a:active {
   color: #6CD6B0;
+  background-color: white;
 }
 
 /* Project Links Dropdown Unordered List */
@@ -138,21 +133,22 @@ header {
   /* Curved corners to keep a consistent style */
   border-radius: 10px;
   background-color: white;
+  color: #6CD6B0;
 }
 
 /* Dropdown List is visible upon hover */
-li:hover > .dropdown-content {
+li:hover>.dropdown-content {
   display: block;
   width: 100%;
 }
 
 /* So that Dropdown Menu has enough spacing from "projects" nav menu item */
-.dropdown-content > li:first-child {
+.dropdown-content>li:first-child {
   padding-top: 20px;
 }
 
 /* So that Dropdown Menu rounded corner shape looks even */
-.dropdown-content > li:last-child {
+.dropdown-content>li:last-child {
   padding-bottom: 20px;
 }
 
@@ -198,8 +194,13 @@ main {
 
 /* Balloon Animation. Define the Vertical movement*/
 @keyframes balloon-enter {
-  from {transform:translate(0px,0px);}
-  to {transform:translate(0px,10px);}
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(0px, 10px);
+  }
 }
 
 /* Define animation vertical float effect details */
@@ -231,6 +232,7 @@ main {
   /* Gentle transition from this state to next state (hover) */
   transition: 500ms;
 }
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -257,6 +259,7 @@ main {
   /* Fixed at an equal distance from bottom & right side of screen viewport */
   bottom: 15px;
   background-color: #56AC8D;
+  color: white;
   border: 2px solid #56AC8D;
   border-radius: 30px;
   font-size: 23px;
@@ -285,8 +288,8 @@ footer {
   padding: 0;
   list-style-type: none;
 }
-/* .button-footer links only include the LinkedIn, E-mail, Instagram buttons */
 
+/* .button-footer links only include the LinkedIn, E-mail, Instagram buttons */
 .button-footer,
 .button-footer:visited,
 .button-footer:hover,
@@ -319,7 +322,7 @@ footer {
   width: 100%;
 }
 
-#about > .container > .row {
+#about>.container>.row {
   padding-bottom: 0;
   margin: 0;
 }
@@ -328,9 +331,8 @@ footer {
   display: inline;
 }
 
-
 /* Henlo Project Page Stylings */
-.container > .henlo > .row {
+.container>.henlo>.row {
   margin-top: 0px;
   border-bottom: 1px solid #2E2D41;
   position: relative;
@@ -340,8 +342,7 @@ footer {
 /* .container > #henlo > .row picture {
   padding-bottom: 25px;
 } */
-
-.container > .henlo > .row h2 {
+.container>.henlo>.row h2 {
   padding-top: 15px;
 }
 
@@ -379,96 +380,119 @@ iframe {
   .col-md-6 {
     width: 48%;
   }
+
   .prototype {
     display: none;
+  }
 }
 
 /* Override: On screens that are 767px wide or less */
 @media screen and (max-width: 767px) {
   header {
     background-color: black;
+    color: white;
     height: 70px;
     text-align: center;
   }
-  header > .container {
+
+  header>.container {
     padding: 10px;
   }
+
   .navigation {
     margin: 0 auto;
   }
-  .navigation > li {
+
+  .navigation>li {
     padding: 10px;
     display: inline-block;
   }
-  .navigation > li > a,
-  .navigation > li > a:visited {
+
+  .navigation>li>a,
+  .navigation>li>a:visited {
     margin-left: 0px;
     font-size: 1.25em;
     background-color: black;
     color: white;
   }
+
   .button-nav,
   .button-nav:visited,
   .button-nav:active,
   .button-nav:focus {
     color: white;
+    background-color: black;
     font-size: 1.25em;
   }
-  .navigation > li:hover > ul {
+
+  .navigation>li:hover>ul {
     background-color: black;
+    color: white;
     width: auto;
   }
-  .dropdown-content > li > a,
-  .dropdown-content > li > a:visited {
+
+  .dropdown-content>li>a,
+  .dropdown-content>li>a:visited {
     background-color: black;
+    color: white;
   }
+
   .hero {
     padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     max-width: 500px;
   }
+
   h1 {
     font-size: 1.5em;
   }
+
   h2 {
     padding-top: 10px;
   }
+
   .hero h2 {
     font-size: 1em;
   }
+
   .hero picture {
     width: 100%;
     padding-left: 0;
   }
+
   #illustration {
     width: 100%;
   }
+
   #hint {
     padding-bottom: 40px;
   }
+
   .row {
     margin-top: 0;
     padding-bottom: 20px;
   }
+
   #youtube {
     padding-bottom: 15px;
   }
+
   [class*="col-"] {
     width: 100%;
     padding: 0;
   }
+
   #copyright {
     max-width: 205px;
     margin: 0 auto;
     font-size: .75em;
   }
-  #sticky {
-    font-size: 20px;
-  }
+
   .jump {
     display: none;
   }
+
   .content {
     width: 100%;
   }
