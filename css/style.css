@@ -239,26 +239,6 @@ main {
   border: 2px solid black;
 }
 
-/* Style the links inside the sidenav */
-.sidenav > a,
-.sidenav > a:visited {
-  position: absolute; /* Position them relative to the browser window */
-  left: 0px; /* Position them outside of the screen */
-  transition: 500ms; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: black; /* White text color */
-  border-radius: 0 10px 10px 0; /* Rounded corners on the top right and bottom right side */
-}
-
-/* On hover, highlight the elements */
-.sidenav > a:hover,
-.sidenav > a:active {
-  background-color: #56AC8D;
-}
-
 .project-section {
   padding-top: 45px;
 }
