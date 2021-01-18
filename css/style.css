@@ -163,6 +163,7 @@ main {
   /* Breathing room from header and rest of content */
   padding: 70px 0px 70px 0px;
   text-align: left;
+  margin: 0 auto;
 }
 
 /* Row styling. Whenever you want 2+ columns of content side-by-side (see override for smaller screens below) */
