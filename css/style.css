@@ -1,7 +1,7 @@
 /*
 Colors used:
-Primary color (Bright Green): #6CD6B0;
-Secondary color (Darker Green): #56AC8D;
+Primary color: #50A486;
+Secondary color Navy: #3F3D56;
 */
 /* General Stylings */
 body {
@@ -49,7 +49,7 @@ img, picture {
 /* Link Styling. Default Dark Green. Can build upon on these for buttons */
 a,
 a:visited {
-  color: #56AC8D;
+  color: #50A486;
   /* As recommended by CSS validation */
   background-color: white;
   /* To override the normalize default */
@@ -60,7 +60,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-  color: #6CD6B0;
+  color: #3F3D56;
   /* As recommended by CSS validation */
   background-color: white;
 }
@@ -113,7 +113,7 @@ header {
 .navigation>li>a:hover,
 .navigation>li>a:focus,
 .navigation>li>a:active {
-  color: #6CD6B0;
+  color: #3F3D56;
   background-color: white;
 }
 
@@ -133,7 +133,7 @@ header {
   /* Curved corners to keep a consistent style */
   border-radius: 10px;
   background-color: white;
-  color: #6CD6B0;
+  color: #3F3D56;
 }
 
 /* Dropdown List is visible upon hover */
@@ -258,9 +258,9 @@ main {
   position: fixed;
   /* Fixed at an equal distance from bottom & right side of screen viewport */
   bottom: 15px;
-  background-color: #56AC8D;
+  background-color: #50A486;
   color: white;
-  border: 2px solid #56AC8D;
+  border: 2px solid #50A486;
   border-radius: 30px;
   font-size: 23px;
   padding: 5px;
@@ -329,21 +329,6 @@ footer {
 
 .span {
   display: inline;
-}
-
-/* Henlo Project Page Stylings */
-.container>.henlo>.row {
-  margin-top: 0px;
-  border-bottom: 1px solid #2E2D41;
-  position: relative;
-  padding-top: 15px;
-}
-
-/* .container > #henlo > .row picture {
-  padding-bottom: 25px;
-} */
-.container>.henlo>.row h2 {
-  padding-top: 15px;
 }
 
 .video {
