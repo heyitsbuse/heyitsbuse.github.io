@@ -266,6 +266,7 @@ main {
   font-size: 23px;
   padding: 5px;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* Float to Top Button gets a Slight scale up on hover */
